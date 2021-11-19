@@ -1,0 +1,664 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/image64.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.container {
+    max-width: 100%;
+    /*background-color: red;*/
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px ;
+}
+
+.footer {
+    background-color:rgb(63, 59, 59);
+    padding: 10px 0;
+    margin-top: 15px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(228, 174, 38);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(241, 178, 16);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fffdfd;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.footer-col .social-links a:hover {
+    background-color: #ffffff;
+    color: #24262b;
+}
+#facebook {
+    background-color: rgb(71, 71, 212);
+    color: #ffffff;
+} 
+#twitter {
+    background-color: rgb(32, 144, 219);
+    color: #ffffff;
+}
+#instagram {
+    background-color: rgba(247, 15, 169, 0.918);
+    color: #ffffff;
+}
+#whatsapp {
+    background-color: rgb(32, 219, 48);
+    color: #ffffff;
+}
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+
+/*Header start*/
+.logo img{
+    width: 100px;
+    height: 90px;
+    border-radius: 10rem;
+}
+
+header {
+    width: 100%;
+}
+header .menu .brand-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: cursive;
+    color: #fff;
+}
+header .menu .brand-name span {
+    color: rgb(248, 179, 6);
+    font-weight: bold;
+}
+.menu {
+    background-color: rgba(36, 35, 32, 0.9);
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.menu ul{
+    float: right;
+    /*margin-right: 20px;*/
+}
+
+.menu ul li {
+    display: inline-block;
+    line-height: 8opx;
+    margin: 0 20px;
+}
+.menu ul li a {
+    color: rgb(240, 235, 235);
+    text-decoration: none;
+    padding: 16px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 0 10px;  
+    text-transform: uppercase;
+    border-radius: 5rem; 
+}
+
+.menu ul li a:hover {
+    background-color: rgb(248, 179, 6);
+    color: rgb(10, 10, 10);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1000px){
+    .logo img{
+        width: 100px;
+        height: 50px;
+        border-radius: 10rem;
+    }
+    
+    header .menu .brand-name {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: cursive;
+        color: #fff;
+    }
+    header .menu .brand-name span {
+        color: rgb(248, 179, 6);
+        font-weight: bold;
+    }
+    .menu {
+        background-color: rgba(36, 35, 32, 0.9);
+        padding: 10px;
+        overflow: hidden;
+        border-radius: 2rem;
+    }
+    
+    .menu ul{
+        float: right;
+        margin-right: 12px;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 10px;
+    }
+    .menu ul li a {
+        color: rgb(240, 235, 235);
+        text-decoration: none;
+        padding: 10px 8px;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: cursive;
+        margin: 0 5px;  
+        text-transform: uppercase;
+        border-radius: 3rem; 
+    }
+
+    .menu ul li a:hover {
+        background-color: rgb(248, 179, 6);
+        color: rgb(10, 10, 10);
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .logo img{
+        width: 100px;
+        height: 50px;
+        border-radius: 10rem;
+    }
+    
+    header .menu .brand-name {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: cursive;
+        color: #fff;
+    }
+    header .menu .brand-name span {
+        color: rgb(248, 179, 6);
+        font-weight: bold;
+    }
+    .menu {
+        background-color: rgba(36, 35, 32, 0.9);
+        padding: 8px;
+        overflow: hidden;
+        border-radius: 2rem;
+    }
+    
+    .menu ul{
+        float: right;
+        margin-right: 10px;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 8px;
+    }
+    .menu ul li a {
+        color: rgb(240, 235, 235);
+        text-decoration: none;
+        padding: 8px 6px;
+        font-size: 8px;
+        font-weight: bold;
+        font-family: cursive;
+        margin: 0 5px;  
+        text-transform: uppercase;
+        border-radius: 3rem; 
+    }
+
+    .menu ul li a:hover {
+        background-color: rgb(248, 179, 6);
+        color: rgb(10, 10, 10);
+        transition: 0.5s;
+    }
+}
+
+/*Home-section start*/
+
+marquee {
+    color: rgb(248, 179, 6);
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*Home-section end*/
+
+/*About-section start*/
+h1 {
+    color: rgb(235, 227, 227);
+    /*background-color: rgba(75, 70, 70, 0.5);*/
+    font-family: cursive;
+    margin: 30px 42%;
+    padding: 20px 0px ;
+    text-align: center;
+}
+
+
+/*About-section end*/
+
+/*Service-section start*/
+h2 {
+    color: #fff;
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 15px;
+}
+
+.showcase {
+    background-color: rgb(255, 255, 255);
+    max-width: 98%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.showcase .box {
+    width: 30%;
+    padding: 0 15px;
+    margin: 10px;
+    /*border: 1px solid #ccc;*/
+    /*float: left;*/
+    /*width: 410px;*/
+    height: 410PX;
+    background-color: rgb(253, 253, 253);
+}
+
+.box img {
+    width: 100%;
+    height: 300px;
+}
+
+.showcase .box .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.bookmark {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.bookmark a {
+    color: rgb(19, 17, 17);
+    background-color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid rgb(219, 208, 208);
+}
+.bookmark a:hover {
+    color: rgb(27, 26, 26);
+    background-color: rgb(248, 179, 6);
+    font-weight: bold;
+}
+
+.showcase .box .desc {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.showcase .box .btn {
+    width: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.showcase .box .btn a {
+    background-color: rgb(228, 174, 38);
+    color: black;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.showcase .box .btn a:hover {
+    background-color: black;
+    color: white;
+}
+@media only screen and (min-width: 1530px) {
+    .showcase .box {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    h2 {
+        font-size: 35px;
+    }
+    .showcase .box {
+        width: 30%;
+        height: auto;
+    }
+    
+    .box img {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .showcase .box .desc {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .showcase .box .desc {
+        font-size: 14px;
+    }
+    .showcase .box .btn {
+        margin: 8px 30px;
+    }
+    
+    .showcase .box .btn a {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+}
+
+@media only screen and (max-width: 670px){
+    .showcase .box {
+        width: 45%;
+        height: auto;
+    }
+    .box img {
+        width: 100%;
+        height: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 420px){
+    .showcase .box {
+        width: 100%;
+        height: auto;
+    }
+    .box img {
+        width: 100%;
+        height: 250px;
+    }
+}
+/*Service-section end*/
+/*gallery-section start*/
+
+.gallery {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 15px;
+}
+
+.gallery-box {
+    width: auto;
+    height: auto;
+    /*background-color: red;*/
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-box img {
+    width: 30%;
+    height: 320px;
+    margin: 10px;
+    padding: 5px;
+    /*float: right;*/
+}
+
+.gallery-box .case {
+    margin: auto;
+    padding: 10px;
+}
+
+.gallery-box .case h3 {
+    color:rgb(34, 29, 29);
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+#para-gallery {
+    font-family: cursive;
+    font-size: 17px;
+    margin: auto;
+    padding: auto;
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .gallery-box img {
+        width: 100%;
+        height: 1000px;
+    }    
+}
+
+@media only screen and (max-width: 440px) {
+    .gallery-box img {
+        width: 100%;
+        height: 250px;
+    }    
+}
+@media only screen and (max-width: 800px) {
+    .gallery-box img {
+        width: 90%;
+        height: 350px;
+    }    
+}
+/*gallery-section end*/
+
+/*agent-section start*/
+.agent-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#agent {
+    color: black;
+}
+
+.agent-box {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    /*background-color: red;*/
+}
+
+.agent-initial {
+    width: 100%;
+    height: auto;
+    /*background-color: rgb(241, 178, 16);*/
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.agent-initial img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #fff;
+}
+
+.agent-info {
+    /*background-color: black;*/
+    width: auto;
+    height: 150px;
+    margin-left: 15px;
+}
+
+#info {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+/*agent-section end*/
+/*Contact section start*/
+.contact-section {
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.contact-section h4 {
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgb(229, 226, 226);
+    padding: 20px 40px;
+    outline: none;
+    color: #000;
+    transition: o.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px darkgoldenrod;
+}
+
+textarea .contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: darkgoldenrod;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.contact-form-btn:hover {
+    background: #fff;
+    color: #000;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/*Contact section end*/
